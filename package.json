@@ -1,0 +1,68 @@
+{
+  "name": "pdfify-alfred",
+  "version": "1.0.1",
+  "description": "Alfred workflow to convert markdown to PDF",
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy",
+    "nodejs",
+    "markdown-to-docx",
+    "markdown",
+    "docx",
+    "pdfify-node"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/stoe/pdfify-alfred#readme",
+  "author": {
+    "name": "Stefan Stölzle",
+    "email": "stoe@github.com",
+    "url": "github.com/stoe"
+  },
+  "repository": "stoe/pdfify-alfred",
+  "bugs": {
+    "url": "https://github.com/stoe/pdfify-alfred/issues"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "xo && ava -v",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "icon.png",
+    "index.js",
+    "info.plist",
+    "license",
+    "readme.md"
+  ],
+  "dependencies": {
+    "alfred-notifier": "^0.2.0",
+    "alfy": "^0.6.0",
+    "execa": "^0.6.3",
+    "opn": "^4.0.2",
+    "ora": "^1.2.0",
+    "pdfify-node": "^2.3.0"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "xo": "^0.18.1"
+  },
+  "ava": {
+    "files": [
+      "test/*.t.js"
+    ]
+  },
+  "xo": {
+    "space": 2
+  },
+  "snyk": true
+}
