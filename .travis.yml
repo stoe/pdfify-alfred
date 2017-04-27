@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+  - '7'
+  - '6'
+
+addons:
+  apt:
+    packages:
+      - pandoc
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change
+  slack:
+    template:
+      - "%{repository_slug}@%{branch} (%{commit}): %{result} in %{duration}"
+      - "%{build_url}"
+    rooms:
+      secure: ITFmSuJVvCikYU7JUPuln5Rh5W3ZpQCAeMRPBXxW0UIAv6Jy2AeRteDB59l7oUI8kUodfFFOnI4K4b+SN1zY7+LwEoyDSFvTgOkaW142gyyt7R/G+yGZIR3iramIwKGBypN4VymN9JvQ6g4YB9tgoz8bWxVHOG614AGuBxDTQtDKYzbzLuZCtZzbylnvg4ppcrA8MML2i0nYoRvymHspcEI6SGXMAG+biLIHWQFBZvzUEzH4wRM81ltCOkvADc+x1dbt469T3bUFbIn1/9hkOoQOXNcRD+WXR8r//8xS7ip1zge4hwjsM9Z0QDWxfl3R3ZrM88nuyaYLkc5/fiDMM0B0ma4vhTVAWT77HIg5FTHnehX99qCUl0k00Ktq7sFmIYW0s7u1zCAKiKDNpobbH4K96nXJ8bXG03iY1FvXObO529v+osleq3/JCurE6vrFuGbyNqcpjc3QzILN5kAEjSZU7pFjgRbuGUspWfmpcKHO230S5IOyKGjwRKuVaV/ceA6mEV30LdWX9NxDzVo3/54VhCuiPEiAbSGfQRzb+c66+p71hdUedQxep+hpciFVfmvdOHpP/dQXs48YN+747On22lN2gGIwOfnJ6ZzXvSsDvkxBZD+DHJN5RPna5Q2soUcZcPXwlEG+GmcePe6OhrRDqUhgAmlwPJQja3rRoQ4=
+    on_success: change
+    on_failure: always
+
+cache:
+  directories:
+    - node_modules
+
+install: 'npm install'
+script: 'npm test'
