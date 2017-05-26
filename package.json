@@ -13,7 +13,7 @@
     "pdfify-node"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/stoe/pdfify-alfred#readme",
+  "homepage": "https://github.com/stoelzle/pdfify-alfred#readme",
   "author": {
     "name": "Stefan Stölzle",
     "email": "stoe@github.com",
@@ -21,7 +21,7 @@
   },
   "repository": "stoe/pdfify-alfred",
   "bugs": {
-    "url": "https://github.com/stoe/pdfify-alfred/issues"
+    "url": "https://github.com/stoelzle/pdfify-alfred/issues"
   },
   "engines": {
     "node": ">=6"
