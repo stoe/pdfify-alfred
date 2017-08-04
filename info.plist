@@ -96,6 +96,8 @@
 			<dict>
 				<key>anchorfields</key>
 				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>daterange</key>
@@ -168,6 +170,8 @@
 			<dict>
 				<key>anchorfields</key>
 				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>daterange</key>
