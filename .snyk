@@ -9,4 +9,8 @@ ignore:
     - pdfify-node > html-pdf > phantomjs-prebuilt > extract-zip > concat-stream:
         reason: None given
         expires: '2017-06-30T09:23:31.368Z'
-patch: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ms:20170412':
+    - pdfify-node > html-pdf > phantomjs-prebuilt > extract-zip > debug > ms:
+        patched: '2017-08-18T08:07:06.271Z'
