@@ -32,7 +32,8 @@
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "prepare": "npm run snyk-protect"
   },
   "files": [
     "icon.png",
@@ -48,7 +49,7 @@
     "opn": "^4.0.2",
     "ora": "^1.2.0",
     "pdfify-node": "^2.3.0",
-    "snyk": "^1.32.0"
+    "snyk": "^1.46.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",

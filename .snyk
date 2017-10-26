@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.8.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:concat-stream:20160901':
@@ -9,4 +9,11 @@ ignore:
     - pdfify-node > html-pdf > phantomjs-prebuilt > extract-zip > concat-stream:
         reason: None given
         expires: '2017-06-30T09:23:31.368Z'
-patch: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - pdfify-node > html-pdf > phantomjs-prebuilt > extract-zip > debug:
+        patched: '2017-10-26T06:56:10.176Z'
+  'npm:ms:20170412':
+    - pdfify-node > html-pdf > phantomjs-prebuilt > extract-zip > debug > ms:
+        patched: '2017-10-26T06:56:10.176Z'
