@@ -1,6 +1,6 @@
 {
   "name": "pdfify-alfred",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Alfred workflow to convert markdown to PDF",
   "keywords": [
     "alfred",
