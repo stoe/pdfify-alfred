@@ -28,7 +28,7 @@
     "npm": ">=3"
   },
   "scripts": {
-    "test": "snyk test && xo && ava -v",
+    "test": "xo && ava -v",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup",
     "snyk-protect": "snyk protect",
