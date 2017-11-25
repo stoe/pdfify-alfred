@@ -2,11 +2,8 @@
 version: v1.7.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
-  'npm:concat-stream:20160901':
-    - pdfify-node > html-pdf > phantomjs-prebuilt > extract-zip > concat-stream:
+  'npm:tunnel-agent:20170305':
+    - pdfify-node > node-sass > request > tunnel-agent:
         reason: None given
-        expires: '2017-05-27T13:21:28.733Z'
-    - pdfify-node > html-pdf > phantomjs-prebuilt > extract-zip > concat-stream:
-        reason: None given
-        expires: '2017-06-30T09:23:31.368Z'
+        expires: '2017-12-25T12:52:12.841Z'
 patch: {}
