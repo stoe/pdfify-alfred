@@ -30,9 +30,7 @@
   "scripts": {
     "test": "xo && ava -v",
     "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "preuninstall": "alfy-cleanup"
   },
   "files": [
     "icon.png",
@@ -66,6 +64,5 @@
   },
   "xo": {
     "space": 2
-  },
-  "snyk": true
+  }
 }
