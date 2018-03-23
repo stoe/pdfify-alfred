@@ -26,6 +26,6 @@ const pdfify = new PDFify({
   silent: true
 });
 
-pdfify.makeHTML().then(html => {
+pdfify.makeHTML().then(html => { // eslint-disable-line promise/prefer-await-to-then
   pdfify.makePDF(html);
 });
