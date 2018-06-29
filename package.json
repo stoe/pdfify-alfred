@@ -30,7 +30,9 @@
   "scripts": {
     "test": "xo && ava -v",
     "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
+    "preuninstall": "alfy-cleanup",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "files": [
     "icon.png",
@@ -45,7 +47,8 @@
     "execa": "^0.10.0",
     "opn": "^5.3.0",
     "ora": "^2.0.0",
-    "pdfify-node": "^2.4.3"
+    "pdfify-node": "^2.4.3",
+    "snyk": "^1.87.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
@@ -64,5 +67,6 @@
   },
   "xo": {
     "space": 2
-  }
+  },
+  "snyk": true
 }
