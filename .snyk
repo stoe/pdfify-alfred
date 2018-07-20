@@ -6,3 +6,12 @@ patch:
   'npm:tunnel-agent:20170305':
     - pdfify-node > node-sass > request > tunnel-agent:
         patched: '2018-06-29T03:02:07.666Z'
+  'npm:hoek:20180212':
+    - pdfify-node > node-sass > node-gyp > request > hawk > hoek:
+        patched: '2018-07-20T03:00:21.299Z'
+    - pdfify-node > node-sass > node-gyp > request > hawk > boom > hoek:
+        patched: '2018-07-20T03:00:21.299Z'
+    - pdfify-node > node-sass > node-gyp > request > hawk > sntp > hoek:
+        patched: '2018-07-20T03:00:21.299Z'
+    - pdfify-node > node-sass > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-07-20T03:00:21.299Z'
