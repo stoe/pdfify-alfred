@@ -2,7 +2,7 @@
 
 const path = require('path');
 const alfy = require('alfy');
-const PDFify = require('pdfify-node');
+const PDFify = require('@stoelzle/pdfify-node');
 
 const source = alfy.input;
 
@@ -26,6 +26,6 @@ const pdfify = new PDFify({
   silent: true
 });
 
-pdfify.makeHTML().then(html => { // eslint-disable-line promise/prefer-await-to-then
+pdfify.makeHTML().then(html => {
   pdfify.makePDF(html);
 });

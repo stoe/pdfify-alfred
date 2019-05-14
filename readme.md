@@ -1,20 +1,19 @@
 # pdfify-alfred
-[![Build Status](https://travis-ci.org/stoelzle/pdfify-alfred.svg?branch=master)](https://travis-ci.org/stoelzle/pdfify-alfred) [![Known Vulnerabilities](https://snyk.io/test/github/stoelzle/pdfify-alfred/badge.svg)](https://snyk.io/test/github/stoelzle/pdfify-alfred) [![NPM version](https://img.shields.io/npm/v/pdfify-alfred.svg)](https://www.npmjs.com/package/pdfify-alfred) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 > Alfred workflow to convert markdown to PDF
 
 
 ## Install
-
+[Configuring NPM for use with GitHub Package Registry](https://help.github.com/en/articles/configuring-npm-for-use-with-github-package-registry)
 ```
-$ npm install --global pdfify-alfred
+$ npm install --global @stoelzle/pdfify-alfred
 ```
 
-*Requires [Node.js](https://nodejs.org) 6+, [homebrew](https://brew.sh/), and the [Alfred Powerpack](https://www.alfredapp.com/powerpack/).*
+*Requires [Node.js](https://nodejs.org) 10+ and the [Alfred Powerpack](https://www.alfredapp.com/powerpack/).*
 
 
 ## Usage
-
 In Alfred, type `pdfify`, search for the file to convert and hit <kbd>Enter</kbd>.
 
 

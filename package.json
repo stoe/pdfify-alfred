@@ -1,6 +1,6 @@
 {
-  "name": "pdfify-alfred",
-  "version": "1.0.7",
+  "name": "@stoelzle/pdfify-alfred",
+  "version": "1.1.0",
   "description": "Alfred workflow to convert markdown to PDF",
   "keywords": [
     "alfred",
@@ -17,22 +17,23 @@
   "author": {
     "name": "Stefan Stölzle",
     "email": "stoe@github.com",
-    "url": "github.com/stoe"
+    "url": "https://github.com/stoe"
   },
-  "repository": "stoe/pdfify-alfred",
+  "repository": "git@github.com:stoelzle/pdfify-alfred.git",
   "bugs": {
     "url": "https://github.com/stoelzle/pdfify-alfred/issues"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "engines": {
-    "node": ">=8",
-    "npm": ">=5"
+    "node": ">=10",
+    "npm": ">=6"
   },
   "scripts": {
     "test": "xo && ava -v",
     "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "preuninstall": "alfy-cleanup"
   },
   "files": [
     "icon.png",
@@ -42,26 +43,24 @@
     "readme.md"
   ],
   "dependencies": {
-    "alfred-notifier": "^0.2.3",
-    "alfy": "^0.7.0",
-    "execa": "^0.10.0",
-    "opn": "^5.3.0",
-    "ora": "^2.1.0",
-    "pdfify-node": "^2.4.4",
-    "snyk": "^1.89.0"
+    "alfy": "^0.8.0",
+    "@stoelzle/pdfify-node": "2.5.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
-    "ava": "^0.25.0",
-    "eslint": "^5.1.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "xo": "^0.21.1"
+    "ava": "^1.4.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "execa": "^1.0.0",
+    "xo": "^0.24.0"
   },
   "resolutions": {
-    "eslint-scope": "3.7.1"
+    "eslint-scope": "^3.7.1",
+    "lodash": "^4.17.11",
+    "tar": "^4.4.2"
   },
   "ava": {
     "files": [
@@ -70,6 +69,5 @@
   },
   "xo": {
     "space": 2
-  },
-  "snyk": true
+  }
 }
