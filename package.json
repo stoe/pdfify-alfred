@@ -1,6 +1,6 @@
 {
   "name": "@stoelzle/pdfify-alfred",
-  "version": "1.1.0",
+  "version": "3.0.0",
   "description": "Alfred workflow to convert markdown to PDF",
   "keywords": [
     "alfred",
@@ -30,11 +30,6 @@
     "node": ">=10",
     "npm": ">=6"
   },
-  "scripts": {
-    "test": "xo && ava -v",
-    "postinstall": "alfy-init",
-    "preuninstall": "alfy-cleanup"
-  },
   "files": [
     "icon.png",
     "index.js",
@@ -42,20 +37,22 @@
     "license",
     "readme.md"
   ],
+  "scripts": {
+    "lint": "github-lint",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup",
+    "test": "ava -v"
+  },
   "dependencies": {
     "alfy": "^0.8.0",
-    "@stoelzle/pdfify-node": "2.5.0"
+    "@stoelzle/pdfify-node": "3.0.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
     "ava": "^1.4.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-node": "^9.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "execa": "^1.0.0",
-    "xo": "^0.24.0"
+    "eslint-plugin-github": "^2.0.0",
+    "execa": "^1.0.0"
   },
   "resolutions": {
     "eslint-scope": "^3.7.1",
@@ -66,8 +63,5 @@
     "files": [
       "test/*.t.js"
     ]
-  },
-  "xo": {
-    "space": 2
   }
 }

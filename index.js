@@ -10,9 +10,7 @@ if (!source) {
   alfy.error('error.');
 }
 
-const destination = path.resolve(
-  source.slice(0, source.indexOf('.md')) + '.pdf'
-);
+const destination = path.resolve(`${source.slice(0, source.indexOf('.md'))}.pdf`);
 
 const pdfify = new PDFify({
   source: path.resolve(source),

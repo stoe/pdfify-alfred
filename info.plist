@@ -21,6 +21,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7FEE9A7D-A72E-4E42-BD4A-8B0F7CBABB50</key>
+		<array/>
 		<key>D0E21602-3C57-4C34-91BE-5E851A1F4AE3</key>
 		<array>
 			<dict>
@@ -61,7 +63,7 @@
 	<key>createdby</key>
 	<string>Stefan Stölzle</string>
 	<key>description</key>
-	<string>Convert markdown to DOCX</string>
+	<string>Convert MD files to PDF</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -150,7 +152,7 @@
 				<key>subtext</key>
 				<string>within {var:folder}</string>
 				<key>title</key>
-				<string>Search for files to DOCXify</string>
+				<string>Search for MD files to PDFify</string>
 				<key>types</key>
 				<array>
 					<string>net.daringfireball.markdown</string>
@@ -226,7 +228,7 @@
 				<key>subtext</key>
 				<string>In which folder would you like to search?</string>
 				<key>title</key>
-				<string>Find files to PDFify...</string>
+				<string>Search for MD files to PDFify...</string>
 				<key>types</key>
 				<array>
 					<string>public.folder</string>
@@ -281,9 +283,9 @@
 		<key>465B78CC-376E-4CC3-AFCF-614A278B3447</key>
 		<dict>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>580</integer>
 			<key>ypos</key>
-			<integer>150</integer>
+			<integer>250</integer>
 		</dict>
 		<key>7B5FDF1B-1208-4483-8A8C-D1B4ACC3153B</key>
 		<dict>
@@ -295,9 +297,9 @@
 		<key>7FEE9A7D-A72E-4E42-BD4A-8B0F7CBABB50</key>
 		<dict>
 			<key>xpos</key>
-			<integer>600</integer>
+			<integer>580</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>90</integer>
 		</dict>
 		<key>D0E21602-3C57-4C34-91BE-5E851A1F4AE3</key>
 		<dict>
