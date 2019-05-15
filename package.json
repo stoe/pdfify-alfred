@@ -45,7 +45,7 @@
   },
   "dependencies": {
     "alfy": "^0.8.0",
-    "@stoelzle/pdfify-node": "3.0.0"
+    "@stoelzle/pdfify-node": "2.6.0"
   },
   "devDependencies": {
     "alfy-test": "^0.3.0",
