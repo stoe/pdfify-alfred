@@ -50,7 +50,7 @@
   "devDependencies": {
     "alfy-test": "^0.3.0",
     "ava": "^2.0.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.1",
     "eslint-plugin-github": "^2.0.0",
     "execa": "^1.0.0"
   },
