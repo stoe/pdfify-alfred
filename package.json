@@ -44,7 +44,7 @@
     "test": "ava -v"
   },
   "dependencies": {
-    "alfy": "^0.8.0",
+    "alfy": "^0.9.0",
     "@stoelzle/pdfify-node": "2.6.0"
   },
   "devDependencies": {
